@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card__header d-flex row">
+        <div class="d-felx column">
+            <h3 class="card__role">{{ ehInstrutor ? 'Instrutor' : 'Aluno' }}</h3>
+            <h2 class="card__name">{{ nome }}</h2>
+            <p class="card__age">Idade {{ idade }} anos</p>
+        </div>
+        <button class="card_delete-btn" (click)="onExibirNome()">Deletar</button>
+    </div>
+</div>
