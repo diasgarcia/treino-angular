@@ -1,59 +1,37 @@
-# Aula01
+# Treino Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.23.
+Projeto de estudos de Angular. A Aula 01 explora a criação de componentes standalone, comunicação entre componentes com `@Input` e `@Output` e organização de estilos globais.
 
-## Development server
+## Aula 01 — Componente de card
 
-To start a local development server, run:
+A aplicação exibe cards de alunos e instrutores e demonstra:
 
-```bash
-ng serve
-```
+- criação de um componente standalone (`Card`);
+- passagem de dados com `@Input()` (`nome`, `idade` e `ehInstrutor`);
+- comunicação com o componente pai por meio do `@Output()` (`exibirNome`);
+- estilos globais e classes utilitárias de layout.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Tecnologias
 
-## Code scaffolding
+- Angular 21
+- TypeScript 5.9
+- Vitest
+- Prettier
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Como rodar
 
 ```bash
-ng generate --help
+npm install
+npm start
 ```
 
-## Building
+A aplicação estará disponível em `http://localhost:4200/`.
 
-To build the project run:
+## Scripts
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+| Comando           | Descrição                                        |
+| ----------------- | ------------------------------------------------ |
+| `npm start`       | Inicia o servidor de desenvolvimento             |
+| `npm run build`   | Gera o build de produção em `dist/`              |
+| `npm test`        | Executa os testes unitários                      |
+| `npm run watch`   | Gera o build em modo de observação               |
