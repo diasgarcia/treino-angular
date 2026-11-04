@@ -17,18 +17,30 @@ export class App {
       idade: 23,
       cpf: '00000000000',
       ehInstrutor: true,
+      corFavorita: 'azul',
     },
     {
       nome: 'Joao da Silva',
       idade: 24,
       cpf: '00000000001',
-      ehInstrutor: false,
+      ehInstrutor: true,
+      corFavorita: 'rosa',
     },
     {
       nome: 'Pedro',
       idade: 22,
       cpf: '00000000002',
       ehInstrutor: false,
+      nota: 9.5,
+      corFavorita: 'verde',
+    },
+    {
+      nome: 'Carlos',
+      idade: 26,
+      cpf: '00000000003',
+      ehInstrutor: false,
+      nota: 6.5,
+      corFavorita: 'vermelho',
     }
   ]
 
