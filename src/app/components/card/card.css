@@ -9,6 +9,7 @@
     cursor: pointer;
     border: none;
     height: fit-content;
+    margin-left: auto;
     padding: 4px 8px;
     border-radius: 4px;
     background-color: #ff4757;
@@ -36,5 +37,6 @@
 }
 
 .card__header {
-    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
 }
