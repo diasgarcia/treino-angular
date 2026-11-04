@@ -16,8 +16,9 @@ describe('App', () => {
 
   it('should render the cards', async () => {
     const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelectorAll('app-card')).toHaveLength(3);
+    expect(compiled.querySelectorAll('app-card')).toHaveLength(app.pessoas.length);
   });
 });
