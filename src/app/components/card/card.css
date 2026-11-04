@@ -41,6 +41,38 @@
     gap: 12px;
 }
 
+.card__grade {
+    padding: 4px 8px;
+    max-width: fit-content;
+    border-radius: 6px;
+}
+
+.card__grade--approved {
+    background-color: #deffee;
+}
+
+.card__grade--failed {
+    background-color: #fae5e5;
+}
+
+.card__grade-text {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.card__grade--approved .card__grade-text {
+    color: #66cb9f;
+}
+
+.card__grade--failed .card__grade-text {
+    color: #e27c7c;
+}
+.card__cpf {
+    font-size: 12px;
+    font-weight: 600;
+    color: #7a7a9d;
+}
+
 .card__avatar {
     width: 44px;
     height: 44px;

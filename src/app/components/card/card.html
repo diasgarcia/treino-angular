@@ -8,4 +8,30 @@
         </div>
         <button class="card_delete-btn" (click)="onExibirNome()">Deletar</button>
     </div>
+
+     @if (!ehInstrutor && nota) {
+        <div class="d-flex row align-center gap-1">
+            <div class="card__grade" [class.card__grade--approved]="nota! >= 7"
+                                     [class.card__grade--failed]="nota! < 7">
+                <p class="card__grade-text">Média: {{ nota}} </p>
+            </div>
+            <p class="card__cpf">{{ cpf | cpf }}</p>
+        </div>
+     }
+
+     <!-- @switch (ehInstrutor) {
+        @case (true) {
+            <p>SIM!</p>
+        }
+
+        @case (false) {
+            <p>NÃO!</p>
+        }
+
+        @default {
+            <p>NÃO TAMBÉM!</p>
+        }
+    } -->
+
+
 </div>

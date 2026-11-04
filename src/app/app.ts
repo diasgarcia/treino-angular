@@ -31,6 +31,7 @@ export class App {
       idade: 22,
       cpf: '00000000002',
       ehInstrutor: false,
+      nota: 9.5,
       corFavorita: 'verde',
     }
   ]

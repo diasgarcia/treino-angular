@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CpfPipe } from '../cpf-pipe';
 
 @Component({
   selector: 'app-card',
-  imports: [CommonModule],
+  imports: [CommonModule, CpfPipe],
   templateUrl: './card.html',
   styleUrl: './card.css',
 })
@@ -11,7 +12,9 @@ export class Card {
 
   @Input() nome!: string;
   @Input() idade!: number;
+  @Input() cpf!: string;
   @Input() corFavorita!: string;
+  @Input() nota?: number;
   @Input() ehInstrutor: boolean = false;
 
   @Output() exibirNome = new EventEmitter<string>();
