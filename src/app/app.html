@@ -2,7 +2,8 @@
     @for (pessoa of pessoas; track pessoa.nome) {
         <app-card [nome]="pessoa.nome"
                   [idade]="pessoa.idade"
-                  [ehInstrutor]="pessoa.ehInstrutor ?? false">
+                  [ehInstrutor]="pessoa.ehInstrutor ?? false"
+                  [corFavorita]="pessoa.corFavorita">
         </app-card>
     }
 </section>

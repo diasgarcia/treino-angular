@@ -3,4 +3,5 @@ export interface Pessoa {
   idade: number,
   cpf: string,
   ehInstrutor?: boolean
+  corFavorita: string
 }
