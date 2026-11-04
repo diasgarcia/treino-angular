@@ -1,5 +1,8 @@
 <section class="app d-flex column gap-1">
-    <app-card [nome]="'Rafael Dias Garcia'" [idade]="23" [ehInstrutor]="true"></app-card>
-    <app-card [nome]="'Rafael Dias Garcia 2'" [idade]="24"></app-card>
-    <app-card [nome]="'Rafael Dias Garcia 3'" [idade]="25" [ehInstrutor]="true" (exibirNome)="onExibirNome($event, 'Rafael 3')"></app-card>
+    @for (pessoa of pessoas; track pessoa.nome) {
+        <app-card [nome]="pessoa.nome"
+                  [idade]="pessoa.idade"
+                  [ehInstrutor]="pessoa.ehInstrutor ?? false">
+        </app-card>
+    }
 </section>
